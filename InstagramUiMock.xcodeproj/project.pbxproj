@@ -11,6 +11,12 @@
 		EB54559E2B40B88000D220C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB54559D2B40B88000D220C9 /* ContentView.swift */; };
 		EB5455A02B40B88100D220C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB54559F2B40B88100D220C9 /* Assets.xcassets */; };
 		EB5455A32B40B88100D220C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5455A22B40B88100D220C9 /* Preview Assets.xcassets */; };
+		EB5455AE2B40C45000D220C9 /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455AD2B40C45000D220C9 /* HomeFeedView.swift */; };
+		EB5455B02B40C4C800D220C9 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455AF2B40C4C800D220C9 /* ExploreView.swift */; };
+		EB5455B22B40C4DD00D220C9 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455B12B40C4DD00D220C9 /* CameraView.swift */; };
+		EB5455B42B40C54B00D220C9 /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455B32B40C54B00D220C9 /* ReelView.swift */; };
+		EB5455B62B40C56900D220C9 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455B52B40C56900D220C9 /* NotificationView.swift */; };
+		EB5455B82B40C58100D220C9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455B72B40C58100D220C9 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		EB54559D2B40B88000D220C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB54559F2B40B88100D220C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB5455A22B40B88100D220C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB5455AD2B40C45000D220C9 /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
+		EB5455AF2B40C4C800D220C9 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		EB5455B12B40C4DD00D220C9 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		EB5455B32B40C54B00D220C9 /* ReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
+		EB5455B52B40C56900D220C9 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		EB5455B72B40C58100D220C9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,8 @@
 		EB54559A2B40B88000D220C9 /* InstagramUiMock */ = {
 			isa = PBXGroup;
 			children = (
+				EB5455AC2B40C42F00D220C9 /* Views */,
 				EB54559B2B40B88000D220C9 /* InstagramUiMockApp.swift */,
-				EB54559D2B40B88000D220C9 /* ContentView.swift */,
 				EB54559F2B40B88100D220C9 /* Assets.xcassets */,
 				EB5455A12B40B88100D220C9 /* Preview Content */,
 			);
@@ -65,6 +77,20 @@
 				EB5455A22B40B88100D220C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB5455AC2B40C42F00D220C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB54559D2B40B88000D220C9 /* ContentView.swift */,
+				EB5455AD2B40C45000D220C9 /* HomeFeedView.swift */,
+				EB5455AF2B40C4C800D220C9 /* ExploreView.swift */,
+				EB5455B12B40C4DD00D220C9 /* CameraView.swift */,
+				EB5455B32B40C54B00D220C9 /* ReelView.swift */,
+				EB5455B52B40C56900D220C9 /* NotificationView.swift */,
+				EB5455B72B40C58100D220C9 /* ProfileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5455B82B40C58100D220C9 /* ProfileView.swift in Sources */,
+				EB5455B42B40C54B00D220C9 /* ReelView.swift in Sources */,
 				EB54559E2B40B88000D220C9 /* ContentView.swift in Sources */,
+				EB5455B62B40C56900D220C9 /* NotificationView.swift in Sources */,
 				EB54559C2B40B88000D220C9 /* InstagramUiMockApp.swift in Sources */,
+				EB5455B02B40C4C800D220C9 /* ExploreView.swift in Sources */,
+				EB5455B22B40C4DD00D220C9 /* CameraView.swift in Sources */,
+				EB5455AE2B40C45000D220C9 /* HomeFeedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +302,8 @@
 				DEVELOPMENT_TEAM = NT57WH95JN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to select a photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +333,8 @@
 				DEVELOPMENT_TEAM = NT57WH95JN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to select a photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
