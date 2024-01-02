@@ -20,6 +20,7 @@
 		EB5455BB2B4356FE00D220C9 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455BA2B4356FE00D220C9 /* StoriesView.swift */; };
 		EB5455BD2B44165100D220C9 /* PostActionsButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455BC2B44165100D220C9 /* PostActionsButtonsView.swift */; };
 		EB5455BF2B44170500D220C9 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455BE2B44170500D220C9 /* PostView.swift */; };
+		EB5455C12B44201800D220C9 /* PostHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455C02B44201800D220C9 /* PostHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EB5455BA2B4356FE00D220C9 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		EB5455BC2B44165100D220C9 /* PostActionsButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionsButtonsView.swift; sourceTree = "<group>"; };
 		EB5455BE2B44170500D220C9 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		EB5455C02B44201800D220C9 /* PostHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				EB5455BA2B4356FE00D220C9 /* StoriesView.swift */,
 				EB5455BC2B44165100D220C9 /* PostActionsButtonsView.swift */,
 				EB5455BE2B44170500D220C9 /* PostView.swift */,
+				EB5455C02B44201800D220C9 /* PostHeaderView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				EB5455BD2B44165100D220C9 /* PostActionsButtonsView.swift in Sources */,
 				EB5455BB2B4356FE00D220C9 /* StoriesView.swift in Sources */,
 				EB54559E2B40B88000D220C9 /* ContentView.swift in Sources */,
+				EB5455C12B44201800D220C9 /* PostHeaderView.swift in Sources */,
 				EB5455B62B40C56900D220C9 /* NotificationView.swift in Sources */,
 				EB54559C2B40B88000D220C9 /* InstagramUiMockApp.swift in Sources */,
 				EB5455B02B40C4C800D220C9 /* ExploreView.swift in Sources */,

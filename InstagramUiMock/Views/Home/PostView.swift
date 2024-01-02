@@ -10,23 +10,8 @@ import SwiftUI
 struct PostView: View {
     var body: some View {
         VStack{
-            HStack {
-                
-                //user profile picture and username
-                Image(systemName: "person.circle")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 30, height: 30, alignment: .center)
-                    .foregroundColor(Color.blue)
-                
-                //will be passing an actual username
-                Text("Kanye_West3")
-                    .foregroundColor(Color.blue)
-                    .bold()
-                
-                Spacer()
-            }
-            .padding(.leading, 30)
+            PostHeaderView()
+            .padding(.leading, 10)
             
             //placeholder image for individual posts
             Image("Foo")
@@ -39,13 +24,33 @@ struct PostView: View {
             
             HStack {
                 // like count
-                Image(systemName: "heart")
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 25, height: 25, alignment: .center)
+                    .foregroundColor(Color.red)
+                
                 Text("32 Likes")
+                    .foregroundColor(Color(.link))
                 Spacer()
             }
             .padding(.leading,10)
             
+            //caption
+            Text("PlaceHolder text for Caption! #SwiftUi #iOS #iPhone #ExplorePage")
+                .padding(.trailing,50)
+            
             // comments
+            
+            //Date
+            HStack {
+                Text("1 hour ago")
+                    .foregroundColor(Color(.secondaryLabel))
+                Spacer()
+            }
+            .padding(.leading, 6)
+            
+                
         }
     }
 }
