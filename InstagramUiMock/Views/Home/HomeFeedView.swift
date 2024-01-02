@@ -13,11 +13,13 @@ struct HomeFeedView: View {
             ScrollView {
                 VStack{
                     StoriesViews()
+                        .padding(.leading,20)
                         .padding()
                     
                     ForEach(0...115, id: \.self) { num in
                         
                         PostView()
+                            .padding(.leading,30)
                             .padding(.bottom, 20)
                         
                     }

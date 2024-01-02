@@ -10,6 +10,7 @@ import SwiftUI
 struct PostActionsButtonsView: View {
     var body: some View {
         
+        
         HStack {
             // action buttons - like, comment, message
             
@@ -19,7 +20,7 @@ struct PostActionsButtonsView: View {
                 Image(systemName: "heart")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 30, height: 30, alignment: .center)
+                    .frame(width: 25, height: 25, alignment: .center)
                     .foregroundColor(Color(.label))
                 
             })
@@ -31,7 +32,7 @@ struct PostActionsButtonsView: View {
                 Image(systemName: "message")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 30, height: 30, alignment: .center)
+                    .frame(width: 25, height: 25, alignment: .center)
                     .foregroundColor(Color(.label))
                 
             })
@@ -43,7 +44,7 @@ struct PostActionsButtonsView: View {
                 Image(systemName: "paperplane")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 30, height: 30, alignment: .center)
+                    .frame(width: 25, height: 25, alignment: .center)
                     .foregroundColor(Color(.label))
                 
             })

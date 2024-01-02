@@ -35,11 +35,15 @@ struct PostView: View {
                 .cornerRadius(10)
             
             PostActionsButtonsView()
-                .padding(.leading, 30)
+                .padding(.leading, 10)
             
             HStack {
                 // like count
+                Image(systemName: "heart")
+                Text("32 Likes")
+                Spacer()
             }
+            .padding(.leading,10)
             
             // comments
         }
@@ -49,5 +53,6 @@ struct PostView: View {
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
         PostView()
+            .preferredColorScheme(.dark)
     }
 }
