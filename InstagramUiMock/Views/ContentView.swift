@@ -32,12 +32,13 @@ struct ContentView: View {
                     Text("Camera")
                 }
             
-            ReelView()
+            NotificationView()
                 .tabItem {
-                    Image(systemName: "play.rectangle")
+                    Image(systemName: "bell")
                         .environment(\.symbolVariants, .none)
+                        
                     
-                    Text("Reels")
+                    Text("Activity")
                 }
             
             ProfileView()
