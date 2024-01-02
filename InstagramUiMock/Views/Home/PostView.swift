@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct PostView: View {
+    
+    let userImageName: String
+    let imageName: String
+    
     var body: some View {
         VStack{
-            PostHeaderView()
+            PostHeaderView(userImageName: userImageName)
             .padding(.leading, 10)
             
             //placeholder image for individual posts
-            Image("Foo")
+            Image(imageName)
+                .resizable()
                 .frame(width: 430, height: 430, alignment: .center)
+                .aspectRatio(contentMode: .fill)
                 .background(Color(.secondarySystemBackground))
                 .cornerRadius(10)
             
@@ -57,7 +63,7 @@ struct PostView: View {
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView()
+        PostView(userImageName: "person1", imageName: "post1")
             .preferredColorScheme(.dark)
     }
 }

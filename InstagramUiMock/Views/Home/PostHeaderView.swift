@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct PostHeaderView: View {
+    
+    let userImageName: String
+    
     var body: some View {
         HStack {
             
             //user profile picture and username
-            Image(systemName: "person.circle")
+            Image(userImageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 30, height: 30, alignment: .center)
-                .foregroundColor(Color.blue)
+                .cornerRadius(20)
             
             //will be passing an actual username
             Text("Kanye_West3")
@@ -30,7 +33,7 @@ struct PostHeaderView: View {
 
 struct PostHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        PostHeaderView()
+        PostHeaderView(userImageName: "person1")
             .preferredColorScheme(.dark)
     }
 }

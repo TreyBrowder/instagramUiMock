@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeFeedView: View {
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -16,9 +17,9 @@ struct HomeFeedView: View {
                         .padding(.leading,20)
                         .padding()
                     
-                    ForEach(0...115, id: \.self) { num in
+                    ForEach(1...8, id: \.self) { num in
                         
-                        PostView()
+                        PostView(userImageName: "person\(num)", imageName: "post\(num)")
                             .padding(.leading,30)
                             .padding(.bottom, 20)
                         
