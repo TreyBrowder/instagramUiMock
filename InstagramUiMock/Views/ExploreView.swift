@@ -21,14 +21,14 @@ struct ExploreView: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Search...", text: $text)
-                    .padding()
-                    .background(Color(.secondarySystemBackground))
-                    .cornerRadius(15)
-                    .padding()
-                
-                
                 ScrollView {
+                    
+                    TextField("Search...", text: $text)
+                        .padding()
+                        .background(Color(.secondarySystemBackground))
+                        .cornerRadius(15)
+                        .padding()
+                    
                     LazyVGrid(columns: columns, content: {
                         ForEach(0...500, id: \.self) { num in
                             let name = imageName.randomElement() ?? "image1"
@@ -42,7 +42,7 @@ struct ExploreView: View {
                                     .aspectRatio(contentMode: .fill)
                                     .foregroundColor(Color.red)
                             }
-
+                            
                         }
                     })
                 }

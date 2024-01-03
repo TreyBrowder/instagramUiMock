@@ -8,36 +8,46 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    var columns: [GridItem] = [
+        GridItem(.fixed(130)),
+        GridItem(.fixed(130)),
+        GridItem(.fixed(130))
+    ]
+    
     var body: some View {
         NavigationView {
-            VStack {
-                
-                //HStack: profile pic with number of post/followers/following
+            
+            //gridview: post
+            ScrollView {
                 ProfileHeaderView()
-                Spacer()
-                
-                //Vstack: name and bio
-                
-                //HStack: edit profile and share profile
+                    .padding()
                 
                 //HStack - Scroll View: Highlight Stories
                 
-                //gridview: post
-                
+                LazyVGrid(columns: columns, spacing: 1,content: {
+                    ForEach(0...90, id: \.self) { num in
+                        let imageName = "post\(Int.random(in: 1...8))"
+                        NavigationLink(
+                            destination: {
+                                PostView(userImageName: "person3", imageName: imageName)
+                                    .navigationBarTitle("Photo", displayMode: .inline)
+                            }, label: {
+                                Image(imageName)
+                                    .resizable()
+                                    .frame(width: 135, height: 135, alignment: .center)
+                                .aspectRatio(contentMode: .fill)
+                            })
+                    }
+                })
+                .navigationBarTitle("iOS_SwiftUi3", displayMode: .inline)
             }
-            .navigationBarTitle("iOS_SwiftUi3", displayMode: .inline)
+            
         }
     }
 }
 
 struct ProfileHeaderView: View{
-    
-    var columns: [GridItem] = [
-        GridItem(.adaptive(minimum: 100, maximum: 150),
-                 spacing: 0,
-                 alignment: .center)
-    ]
-    
     var body: some View {
         //avatar image counts
         VStack {
@@ -58,16 +68,10 @@ struct ProfileHeaderView: View{
             //Edit profile button
             ProfileEditButtonsView()
             
-            LazyVGrid(columns: []) {
-                //placholder text view
-                ForEach(0...90, id: \.self) { num in
-                    let imageName = "post\(Int.random(in: 1...8))"
-                }
-            }
         }
     }
 }
-    
+
 struct ProfileHeaderCountView: View{
     var body: some View {
         HStack {
@@ -80,7 +84,7 @@ struct ProfileHeaderCountView: View{
                     .multilineTextAlignment(.center)
             }
             .padding(.trailing,10)
-                
+            
             Button {
                 //no operation - UI only
             } label: {
@@ -89,7 +93,7 @@ struct ProfileHeaderCountView: View{
                     .multilineTextAlignment(.center)
             }
             .padding(.trailing,10)
-                
+            
             Button {
                 //no operation - UI only
             } label: {
@@ -97,12 +101,12 @@ struct ProfileHeaderCountView: View{
                     .foregroundColor(Color(.label))
                     .multilineTextAlignment(.center)
             }
-                .padding(.trailing,10)
-                
+            .padding(.trailing,10)
+            
         }
     }
 }
-    
+
 struct ProfileNameBioView: View {
     var body: some View {
         HStack{
@@ -111,7 +115,7 @@ struct ProfileNameBioView: View {
                 .padding(.leading,20)
             Spacer()
         }
-            
+        
         HStack{
             Text("SwiftUI | Developer | Hacker | Gym Life")
                 .multilineTextAlignment(.leading)
@@ -120,7 +124,7 @@ struct ProfileNameBioView: View {
         }
     }
 }
-    
+
 struct ProfileEditButtonsView: View {
     var body: some View {
         HStack {
@@ -133,7 +137,7 @@ struct ProfileEditButtonsView: View {
                     .background(Color(.secondarySystemBackground))
                     .cornerRadius(10)
             }
-                
+            
             Button {
                 //no action here - UI focus only
             } label: {
@@ -146,7 +150,7 @@ struct ProfileEditButtonsView: View {
         }
     }
 }
-    
+
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
