@@ -21,6 +21,11 @@
 		EB5455BF2B44170500D220C9 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455BE2B44170500D220C9 /* PostView.swift */; };
 		EB5455C12B44201800D220C9 /* PostHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5455C02B44201800D220C9 /* PostHeaderView.swift */; };
 		EBBBD9602B44B64500F19B11 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBD95F2B44B64500F19B11 /* CaptureView.swift */; };
+		EBBBD9632B45D50600F19B11 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBD9622B45D50600F19B11 /* ProfileHeaderView.swift */; };
+		EBBBD9652B45D55E00F19B11 /* ProfileHeaderCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBD9642B45D55E00F19B11 /* ProfileHeaderCountView.swift */; };
+		EBBBD9672B45D5A400F19B11 /* ProfileEditButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBD9662B45D5A400F19B11 /* ProfileEditButtonsView.swift */; };
+		EBBBD9692B45D60D00F19B11 /* ProfileNameBioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBD9682B45D60D00F19B11 /* ProfileNameBioView.swift */; };
+		EBBBD96B2B45D8C300F19B11 /* ProfilePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBD96A2B45D8C300F19B11 /* ProfilePostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,11 @@
 		EB5455BE2B44170500D220C9 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		EB5455C02B44201800D220C9 /* PostHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderView.swift; sourceTree = "<group>"; };
 		EBBBD95F2B44B64500F19B11 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		EBBBD9622B45D50600F19B11 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		EBBBD9642B45D55E00F19B11 /* ProfileHeaderCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCountView.swift; sourceTree = "<group>"; };
+		EBBBD9662B45D5A400F19B11 /* ProfileEditButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditButtonsView.swift; sourceTree = "<group>"; };
+		EBBBD9682B45D60D00F19B11 /* ProfileNameBioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNameBioView.swift; sourceTree = "<group>"; };
+		EBBBD96A2B45D8C300F19B11 /* ProfilePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +100,12 @@
 		EB5455AC2B40C42F00D220C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EBBBD96C2B45D8EC00F19B11 /* Explore */,
+				EBBBD9612B45D4CC00F19B11 /* Profile */,
 				EBBBD95E2B44B53E00F19B11 /* Camera */,
 				EB5455B92B4356AB00D220C9 /* Home */,
 				EB54559D2B40B88000D220C9 /* ContentView.swift */,
-				EB5455AF2B40C4C800D220C9 /* ExploreView.swift */,
 				EB5455B52B40C56900D220C9 /* NotificationView.swift */,
-				EB5455B72B40C58100D220C9 /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +129,27 @@
 				EBBBD95F2B44B64500F19B11 /* CaptureView.swift */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		EBBBD9612B45D4CC00F19B11 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EB5455B72B40C58100D220C9 /* ProfileView.swift */,
+				EBBBD9622B45D50600F19B11 /* ProfileHeaderView.swift */,
+				EBBBD9642B45D55E00F19B11 /* ProfileHeaderCountView.swift */,
+				EBBBD9662B45D5A400F19B11 /* ProfileEditButtonsView.swift */,
+				EBBBD9682B45D60D00F19B11 /* ProfileNameBioView.swift */,
+				EBBBD96A2B45D8C300F19B11 /* ProfilePostView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EBBBD96C2B45D8EC00F19B11 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				EB5455AF2B40C4C800D220C9 /* ExploreView.swift */,
+			);
+			path = Explore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,15 +225,20 @@
 				EB5455B82B40C58100D220C9 /* ProfileView.swift in Sources */,
 				EB5455BD2B44165100D220C9 /* PostActionsButtonsView.swift in Sources */,
 				EBBBD9602B44B64500F19B11 /* CaptureView.swift in Sources */,
+				EBBBD96B2B45D8C300F19B11 /* ProfilePostView.swift in Sources */,
+				EBBBD9672B45D5A400F19B11 /* ProfileEditButtonsView.swift in Sources */,
 				EB5455BB2B4356FE00D220C9 /* StoriesView.swift in Sources */,
 				EB54559E2B40B88000D220C9 /* ContentView.swift in Sources */,
 				EB5455C12B44201800D220C9 /* PostHeaderView.swift in Sources */,
+				EBBBD9632B45D50600F19B11 /* ProfileHeaderView.swift in Sources */,
 				EB5455B62B40C56900D220C9 /* NotificationView.swift in Sources */,
 				EB54559C2B40B88000D220C9 /* InstagramUiMockApp.swift in Sources */,
+				EBBBD9692B45D60D00F19B11 /* ProfileNameBioView.swift in Sources */,
 				EB5455B02B40C4C800D220C9 /* ExploreView.swift in Sources */,
 				EB5455B22B40C4DD00D220C9 /* CameraView.swift in Sources */,
 				EB5455AE2B40C45000D220C9 /* HomeFeedView.swift in Sources */,
 				EB5455BF2B44170500D220C9 /* PostView.swift in Sources */,
+				EBBBD9652B45D55E00F19B11 /* ProfileHeaderCountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
