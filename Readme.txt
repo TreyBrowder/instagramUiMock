@@ -3,6 +3,8 @@ Built an older version of the Instagram UI using swiftUI
 used grid views embedded in a scroll view to build users home page, the explore page and profile page.
 camera tab brings up the photo library since I only wanted it to work with the XCode simulator and not an actual device.
 
+![IGMock1](https://github.com/TreyBrowder/instagramUiMock/assets/26770809/6d2f5810-48d6-40c9-adb1-2e491fcde88f)
+
 <img width="1028"alt="Instagram Mock picture 1"src="https://github.com/TreyBrowder/instagramUiMock/assets/26770809/00841cef-4297-4c37-ad6b-9803b0346aef">
 
 <img width="1028"alt="Instagram Mock picture 2"src="https://github.com/TreyBrowder/instagramUiMock/assets/26770809/9de6b1e4-862e-47dc-8b23-391dd3d94aea">
