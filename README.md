@@ -9,3 +9,5 @@ Built an older version of the Instagram UI using swiftUI
 <img width="972" alt="Screenshot 2024-04-08 at 4 50 48 PM" src="https://github.com/TreyBrowder/instagramUiMock/assets/26770809/a0b5951d-526b-45a5-b43e-9f8fb7a8d332">
 
 <img width="972" alt="Screenshot 2024-04-08 at 4 50 59 PM" src="https://github.com/TreyBrowder/instagramUiMock/assets/26770809/3d70260b-8b97-4140-86ce-088d4893321a">
+
+*******camera button will bring up image picker, I only built this to work with the simulators in XCode not an actual device
